@@ -9,79 +9,92 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="visualli-hidden">SEDONA</h1>
-        <figure class="sedona-logo">
+    <header class="navigation-and-choose-hotels">
+        <h1 class="visually-hidden">SEDONA</h1>
+        <figure class="logo">
             <img src="images/logo.png" alt="logo">
         </figure>
         <nav class="sedona-navigation">
             <ul>
                 <li class="sedona-navigation_item"><a href="#">информация</a></li>
-                <li class="sedona-navigation_item"><a href="#">фото и видио</a></li>
+                <li class="sedona-navigation_item"><a href="#">фото и видео</a></li>
                 <li class="sedona-navigation_item"><a href="#">карта штата</a></li>
                 <li class="sedona-navigation_item"><a href="#">гостиницы</a></li>
             </ul>
         </nav>
     </header>
-    <aside class="sedona-hotels-choose">
-
-        <form action="get">
-            <section class="sedona-hotels_check">
-                <h2 class="sedona-hotels_check_heading">инфраструктура</h2>
-
-                <input type="checkbox" name="subscribe-field-swimming-pool" id="subscribe-field-swimming-pool" checked>
-                <label for="subscribe-field-swimming-pool">бассейн</label>
-
-                <input type="checkbox" name="subscribe-field-parking" id="subscribe-field-parking">
-                <label for="subscribe-field-parking">парковка</label>
-
-                <input type="checkbox" name="subscribe-field-wi-fi" id="subscribe-field-wi-fi">
-                <label for="subscribe-field-wi-fi">wi-fi</label>
-            </section>
-
-            <section class="sedona-hotels_check">
-                <h2 class="sedona-hotels_check_heading">тип жилья</h2>
-
-                <input type="checkbox" name="subscribe-hausing-hotel" id="subscribe-hausing-hotel" checked>
-                <label for="subscribe-hausing-hotel">гостиница</label>
-
-                <input type="checkbox" name="subscribe-hausing-motel" id="subscribe-hausing-motel" checked>
-                <label for="subscribe-hausing-motel">мотель</label>
-
-                <input type="checkbox" name="subscribe-hausing-apartments" id="subscribe-hausing-apartments" checked>
-                <label for="subscribe-hausing-apartments">апартаменты</label>
-            </section>
-
-            <section class="sedona-hotels_check">
-                <h2 class="visualli-hidden">стоимость за сутки в рублях</h2>
-                <label for="cost-per-day">стоимость в сутки(р):</label>
-                <input type="range" min="0" max="30000" step="100" id="cost-per-day">
-                <button>показать</button>
-            </section>
-        </form>
-
-    </aside>
     <main>
-        <header>
-            <nav class="sedona-hotels-sort-by">
-                <p>найдено: 3</p>
+        <div class="sedona-hotels-choose">
+
+            <form action="get">
+                <ul class="sedona-hotels_check">
+                    <li>
+                        <h2 class="sedona-hotels_check_heading">инфраструктура</h2>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="subscribe-field-swimming-pool" id="subscribe-field-swimming-pool"
+                            checked>
+                        <label for="subscribe-field-swimming-pool">бассейн</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="subscribe-field-parking" id="subscribe-field-parking">
+                        <label for="subscribe-field-parking">парковка</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="subscribe-field-wi-fi" id="subscribe-field-wi-fi">
+                        <label for="subscribe-field-wi-fi">wi-fi</label>
+                    </li>
+                </ul>
+
+                <ul class="sedona-hotels_check">
+                    <li>
+                        <h2 class="sedona-hotels_check_heading">тип жилья</h2>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="subscribe-hausing-hotel" id="subscribe-hausing-hotel" checked>
+                        <label for="subscribe-hausing-hotel">гостиница</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="subscribe-hausing-motel" id="subscribe-hausing-motel" checked>
+                        <label for="subscribe-hausing-motel">мотель</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="subscribe-hausing-apartments" id="subscribe-hausing-apartments"
+                            checked>
+                        <label for="subscribe-hausing-apartments">апартаменты</label>
+                    </li>
+                </ul>
+
+                <div class="sedona-hotels_check">
+                    <h2 class="visually-hidden">стоимость за сутки в рублях</h2>
+                    <label for="cost-per-day">стоимость в сутки(р):</label>
+                    <input type="range" min="0" max="30000" step="100" id="cost-per-day">
+                    <button>показать</button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="wraper">
+            <section class="sedona-hotels-sort-by">
+                <p>найдено:<span>3</span></p>
                 <ul>
                     <li>сортировка:</li>
                     <li><a href="#">по цене</a></li>
                     <li><a href="#">по типу</a></li>
                     <li><a href="#">по рейтингу</a></li>
                 </ul>
-            </nav>
+            </section>
 
             <button><img src="svg/icon-up-dir.svg" alt="up"></button>
             <button><img src="svg/icon-down-dir.svg" alt="down"></button>
-        </header>
+        </div>
 
-        <section class="sedona-hotels">
-            <h2 class="visualli-hidden">описание и фотографии гостиницы amara</h2>
+        <article class="sedona-hotels">
+            <h2 class="visually-hidden">описание и фотографии гостиницы amara</h2>
 
             <section class="sedona-hotels-item">
-                <h2 class="visualli-hidden">гостиница amara</h2>
+                <h2 class="visually-hidden">гостиница amara</h2>
                 <a href="#"><img src="images/hotel-amara.jpg" alt="amara"></a>
                 <p class="sedona-hotels-item__name">amara resort & spa</p>
                 <p class="sedona-hotels-item__kind-of">гостиница</p>
@@ -99,13 +112,13 @@
                 <p class="sedona-hotels-item__rating">рейтинг: 8,5</p>
             </figure>
 
-        </section>
+        </article>
 
-        <section class="sedona-hotels">
-            <h2 class="visualli-hidden">мотель desert quail</h2>
+        <article class="sedona-hotels">
+            <h2 class="visually-hidden">мотель desert quail</h2>
 
             <section class="sedona-hotels-item">
-                <h2 class="visualli-hidden">описание и фотографии мотеля desert quail</h2>
+                <h2 class="visually-hidden">описание и фотографии мотеля desert quail</h2>
                 <a href="#"><img src="images/hotel-desert.jpg" alt="desert quail"></a>
                 <p class="sedona-hotels-item_name">desert quail inn</p>
                 <p class="sedona-hotels-item_kind-of">мотель</p>
@@ -121,13 +134,13 @@
                 <p class="sedona-hotels-item_rating">рейтинг: 8,9</p>
             </figure>
 
-        </section>
+        </article>
 
-        <section class="sedona-hotels">
-            <h2 class="visualli-hidden">апартаменты villas at poco diablo</h2>
+        <article class="sedona-hotels">
+            <h2 class="visually-hidden">апартаменты villas at poco diablo</h2>
 
             <section class="sedona-hotels-item">
-                <h2 class="visualli-hidden">описание и фотографии апартаментов villas at poco diablo</h2>
+                <h2 class="visually-hidden">описание и фотографии апартаментов villas at poco diablo</h2>
                 <a href="#"><img src="images/hotel-villas.jpg" alt="villas diablo"></a>
                 <p class="sedona-hotels-item_name">villas at poco diablo</p>
                 <p class="sedona-hotels-item_kind-of">апартаменты</p>
@@ -142,26 +155,26 @@
                 <p class="sedona-hotels-item_rating">рейтинг: 9,2</p>
             </figure>
 
-        </section>
+        </article>
 
     </main>
 
     <footer>
 
-        <h1 class="visualli-hidden">SEDONA-hotel</h1>
-        <div class="sedona-footer">
+        <h2 class="visually-hidden">SEDONA-hotel</h1>
+            <div class="sedona-footer">
 
-            <a href="#">
-                <p class="sedona-footer_item">#visitSEDONA</p>
-            </a>
+                <p class="sedona-footer_item">
+                    <a href="#">#visitSEDONA</a>
+                </p>
 
-            <figure class="sedona-foote_social-networks">
-                <a href="#" aria-label="twitter"><img src="svg/twitter.svg" alt="twitter"></a>
-                <a href="#" aria-label="facebook"><img src="svg/fb-icon.svg" alt="facebook"></a>
-                <a href="#" aria-label="youtube"><img src="svg/youtube.svg" alt="youtube"></a>
-            </figure>
+                <figure class="sedona-foote_social-networks">
+                    <a href="#" aria-label="twitter"><img src="svg/twitter.svg" alt="twitter"></a>
+                    <a href="#" aria-label="facebook"><img src="svg/fb-icon.svg" alt="facebook"></a>
+                    <a href="#" aria-label="youtube"><img src="svg/youtube.svg" alt="youtube"></a>
+                </figure>
 
-        </div>
+            </div>
 
     </footer>
 </body>
