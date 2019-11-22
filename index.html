@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sedona</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index-style.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="main-header">
         <h1 class="visually-hidden">SEDONA</h1>
         <figure class="logo">
             <img src="images/logo.png" alt="logo">
@@ -30,7 +31,7 @@
 
             <img class="tagline_item" src="images/welcom.png" alt="Welcom">
             <img class="tagline_item" src="images/to-the-gargeous.png" alt="to the gorgeous">
-            <h1 class="tagline_heading">SEDONA</h1>
+            <img class="tagline_item" src="images/SEDONA.png" alt="sedona">
             <img class="tagline_item" src="images/becaus.png" alt="Because the Grand  Canyon sucks!">
 
         </figure>
@@ -121,10 +122,12 @@
 
         <section class="sedona-interested">
             <h2 class="visually-hidden">SEDONA</h2>
-            <p class="sedona-interested_question">заинтересовались</p>
-            <p class="sedona-interested_show-offers"></p>
+            <p class="sedona-interested_question">заинтересовались?</p>
+            <p class="sedona-interested_show-offers">Укажите предполагаемые даты поездки, 
+                    и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                    <button class="sedona-interested__hotel-search" type="button"><span>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</span></button>
 
-            <form action="get">
+            <form class="hotel-search" action="get">
 
                 <p>
                     <label for="date-arrival">ДАТА ЗАЕЗДА:</label>
@@ -142,7 +145,7 @@
                     <label for="number-of-children">ДЕТИ:</label>
                     <input type="number" id="number-of-children" name="number">
                 </p>
-                <button class="catalog__btn" type="submit">НАЙТИ</button>
+                <button class="catalog__btn" type="submit"><span>НАЙТИ</span></button>
 
             </form>
 
