@@ -12,8 +12,8 @@
 <body>
 
     <header>
-        <h1 class="visualli-hidden">SEDONA</h1>
-        <figure class="sedona-logo">
+        <h1 class="visually-hidden">SEDONA</h1>
+        <figure class="logo">
             <img src="images/logo.png" alt="logo">
         </figure>
 
@@ -44,7 +44,7 @@
 
     <main>
         <section class="sedona-reason-city">
-            <h2 class="visuallli-hidden">первая причина, почему седона круче, чем гранд каньон</h2>
+            <h2 class="visually-hidden">первая причина, почему седона круче, чем гранд каньон</h2>
 
             <section class="sedona-reason-city_card">
                 <h3 class="sedona-reason-city_card_heading">настоящий городок</h3>
@@ -57,8 +57,8 @@
 
         </section>
 
-        <section class="sedona-title">
-            <h2 class="visuallli-hidden">Важная информация для посетителей седоны</h2>
+        <div class="sedona-title">
+            <h2 class="visually-hidden">Важная информация для посетителей седоны</h2>
 
             <section class="sedona-title_item">
                 <img src="svg/icon-1.svg" alt="жильё">
@@ -79,10 +79,10 @@
                 <p class="sedona-title-item_text">Не только китайского, но и местного производства!</p>
             </section>
 
-        </section>
+        </div>
 
-        <section class="sedona-reason-city">
-            <h2 class="visuallli-hidden">вторая причина, почему седона круче, чем гранд каньон</h2>
+        <div class="sedona-reason-city">
+            <h2 class="visually-hidden">вторая причина, почему седона круче, чем гранд каньон</h2>
 
             <figure class="sedona-reason-city_picture">
                 <img src="images/card-2.jpg" alt="там есть мост дьявала">
@@ -93,10 +93,11 @@
                 <p class="sedona-reason-city_card_item">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </section>
 
-        </section>
+        </div>
 
-        <section class="sedona-more-reasons">
-            <h2 class="visuallli-hidden">и ещё три причины, почему седона круче, чем гранд каньон</h2>
+        <div class="sedona-more-reasons">
+            <h2 class="visuallly-hidden">и ещё три причины, почему седона круче, чем гранд каньон</h2>
+
             <section class="sedona-reason-city_card">
                 <h3 class="sedona-reason-city_card_heading">небольшая площадь</h3>
                 <p class="sedona-reason-city_card_item">№3</p>
@@ -116,14 +117,15 @@
                 <p class="sedona-reason-city_card_item">№5</p>
                 <p class="sedona-reason-city_card_item">Большинство едет в гранд каньон и толпится там</p>
             </section>
-        </section>
+        </div>
 
         <section class="sedona-interested">
-            <h2 class="visualli-hidden">SEDONA</h2>
+            <h2 class="visually-hidden">SEDONA</h2>
             <p class="sedona-interested_question">заинтересовались</p>
             <p class="sedona-interested_show-offers"></p>
 
             <form action="get">
+
                 <p>
                     <label for="date-arrival">ДАТА ЗАЕЗДА:</label>
                     <input type="date" id="date-arrival" name="date">
@@ -137,9 +139,10 @@
                     <input type="number" id="number-of-adults" name="number">
                 </p>
                 <p>
-                    <label for="number-of-children">ВЗРОСЛЫЕ:</label>
+                    <label for="number-of-children">ДЕТИ:</label>
                     <input type="number" id="number-of-children" name="number">
                 </p>
+                <button class="catalog__btn" type="submit">НАЙТИ</button>
 
             </form>
 
@@ -147,19 +150,19 @@
     </main>
 
     <footer>
-        <article class="sedona-map">
-            <h2 class="visuallli-hidden">Укажите место на карте</h2>
+        
+            <h2 class="visually-hidden">Укажите место на карте</h2>
             <div class="sedona-footer">
-                <a href="#">
-                    <p class="sedona-footer_item">#visitSEDONA</p>
-                </a>
-                <nav class="sedona-foote_social-networks">
+                <p class="sedona-footer_item">
+                    <a href="#">#visitSEDONA</a>
+                </p>
+                <figure class="sedona-footer_social-networks">
                     <a href="#" aria-label="twitter"><img src="svg/twitter.svg" alt="twitter"></a>
                     <a href="#" aria-label="facebook"><img src="svg/fb-icon.svg" alt="facebook"></a>
                     <a href="#" aria-label="youtube"><img src="svg/youtube.svg" alt="youtube"></a>
-                </nav>
+                </figure>
             </div>
-        </article>
+
     </footer>
 </body>
 
