@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SEDONA Hotels</title>
+    <title>Sedona Hotels</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/hotels-style.css">
 </head>
@@ -28,10 +28,10 @@
     <main>
         <div class="sedona-hotels-choose">
 
-            <form action="get">
+            <form class="form-hotels-check" action="get">
                 <ul class="sedona-hotels_check">
                     <li>
-                        <h2 class="sedona-hotels_check_heading">инфраструктура</h2>
+                        <h2 class="sedona-hotels_check_heading">инфраструктура:</h2>
                     </li>
                     <li>
                         <input type="checkbox" name="subscribe-field-swimming-pool" id="subscribe-field-swimming-pool"
@@ -50,7 +50,7 @@
 
                 <ul class="sedona-hotels_check">
                     <li>
-                        <h2 class="sedona-hotels_check_heading">тип жилья</h2>
+                        <h2 class="sedona-hotels_check_heading">тип жилья:</h2>
                     </li>
                     <li>
                         <input type="checkbox" name="subscribe-hausing-hotel" id="subscribe-hausing-hotel" checked>
@@ -69,9 +69,9 @@
 
                 <div class="sedona-hotels_check">
                     <h2 class="visually-hidden">стоимость за сутки в рублях</h2>
-                    <label for="cost-per-day">стоимость в сутки(р):</label>
+                    <label class="cost-per-day" for="cost-per-day">стоимость в сутки(р):</label>
                     <input type="range" min="0" max="30000" step="100" id="cost-per-day">
-                    <button>показать</button>
+                    <button class="hotels-check__btn" type="submit"><span>ПОКАЗАТЬ</span></button>
                 </div>
             </form>
 
@@ -79,12 +79,12 @@
 
         <div class="wraper">
             <section class="sedona-hotels-sort-by">
-                <p>найдено:<span>3</span></p>
+                <p class="sedona-hotels-sort-by__found">найдено: <span>3</span></p>
                 <ul>
                     <li>сортировка:</li>
-                    <li><a href="#">по цене</a></li>
-                    <li><a href="#">по типу</a></li>
-                    <li><a href="#">по рейтингу</a></li>
+                    <li><a class="kind-of-sort" href="#">по цене</a></li>
+                    <li><a class="kind-of-sort" href="#">по типу</a></li>
+                    <li><a class="kind-of-sort" href="#">по рейтингу</a></li>
                 </ul>
             </section>
 
@@ -101,7 +101,7 @@
                 <p class="sedona-hotels-item__name">amara resort & spa</p>
                 <p class="sedona-hotels-item__kind-of">гостиница</p>
                 <p class="sedona-hotels-item__cost">от 4000 р.</p>
-                <a href="#">подробнее</a>
+                <p class="sedona-hotels-item__details"><a href="#">подробнее</a></p>
                 <button class="sedona-hotels-item__button" type="submit" value="забронировать">забронировать</button>
             </section>
 
@@ -111,7 +111,7 @@
                 <img class="sedona-hotels-item__star" src="svg/star.svg" alt="star">
                 <img class="sedona-hotels-item__star" src="svg/star.svg" alt="star">
                 <img class="sedona-hotels-item__star" src="svg/star.svg" alt="star">
-                <p class="sedona-hotels-item__rating">рейтинг: 8,5</p>
+                <p class="sedona-hotels-item__rating">рейтинг:<span>8,5</span></p>
             </figure>
 
         </article>
@@ -122,10 +122,10 @@
             <section class="sedona-hotels-item">
                 <h2 class="visually-hidden">описание и фотографии мотеля desert quail</h2>
                 <a href="#"><img src="images/hotel-desert.jpg" alt="desert quail"></a>
-                <p class="sedona-hotels-item_name">desert quail inn</p>
-                <p class="sedona-hotels-item_kind-of">мотель</p>
-                <p class="sedona-hotels-item_cost">от 3000 р.</p>
-                <a href="#">подробнее</a>
+                <p class="sedona-hotels-item__name">desert quail inn</p>
+                <p class="sedona-hotels-item__kind-of">мотель</p>
+                <p class="sedona-hotels-item__cost">от 3000 р.</p>
+                <p class="sedona-hotels-item__details"><a href="#">подробнее</a></p>
                 <button class="sedona-hotels-item__button" type="submit" value="забронировать">забронировать</button>
             </section>
 
@@ -133,7 +133,7 @@
                 <img class="sedona-hotels-item__star" src="svg/star.svg" alt="star">
                 <img class="sedona-hotels-item__star" src="svg/star.svg" alt="star">
                 <img class="sedona-hotels-item__star" src="svg/star.svg" alt="star">
-                <p class="sedona-hotels-item_rating">рейтинг: 8,9</p>
+                <p class="sedona-hotels-item__rating">рейтинг:<span>8,9</span></p>
             </figure>
 
         </article>
@@ -144,17 +144,17 @@
             <section class="sedona-hotels-item">
                 <h2 class="visually-hidden">описание и фотографии апартаментов villas at poco diablo</h2>
                 <a href="#"><img src="images/hotel-villas.jpg" alt="villas diablo"></a>
-                <p class="sedona-hotels-item_name">villas at poco diablo</p>
-                <p class="sedona-hotels-item_kind-of">апартаменты</p>
-                <p class="sedona-hotels-item_cost">от 2000 р.</p>
-                <a href="#">подробнее</a>
+                <p class="sedona-hotels-item__name">villas at poco diablo</p>
+                <p class="sedona-hotels-item__kind-of">апартаменты</p>
+                <p class="sedona-hotels-item__cost">от 2000 р.</p>
+                <p class="sedona-hotels-item__details"><a href="#">подробнее</a></p>
                 <button class="sedona-hotels-item__button" type="submit" value="забронировать">забронировать</button>
             </section>
 
             <figure class="sedona-hotels-item">
                 <img class="sedona-hotels-item__star" src="svg/star.svg" alt="star">
                 <img class="sedona-hotels-item__star" src="svg/star.svg" alt="star">
-                <p class="sedona-hotels-item_rating">рейтинг: 9,2</p>
+                <p class="sedona-hotels-item__rating">рейтинг:<span>9,2</span></p>
             </figure>
 
         </article>

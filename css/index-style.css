@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic");
-* {
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,6 +24,10 @@ body {
   background-color: #fff;
 }
 
+.logo {
+  position: top center;
+}
+
 a {
   text-decoration: none;
 }
@@ -28,7 +40,8 @@ a {
   color: inherit;
 }
 
-.sedona-navigation_item a:hover, .sedona-navigation_item a:focus {
+.sedona-navigation_item a:hover,
+.sedona-navigation_item a:focus {
   color: #81b3d2;
 }
 
@@ -38,6 +51,9 @@ a {
 
 .main-header {
   background-image: url(../images/background-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #68727b;
 }
 
 .sedona-description_heading {
@@ -79,7 +95,8 @@ a {
   border: none;
 }
 
-.sedona-interested__hotel-search:hover, .sedona-interested__hotel-search:focus {
+.sedona-interested__hotel-search:hover,
+.sedona-interested__hotel-search:focus {
   background-color: #604e43;
 }
 
@@ -130,7 +147,8 @@ a {
   border: none;
 }
 
-.catalog__btn:hover, .catalog__btn:focus {
+.catalog__btn:hover,
+.catalog__btn:focus {
   background-color: #669ec0;
 }
 

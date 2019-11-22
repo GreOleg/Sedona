@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic');
 
-* {
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
 }
 
@@ -16,6 +22,10 @@ body {
   text-transform: uppercase;
 
   background-color: #fff;
+}
+
+.logo {
+  position: top center;
 }
 
 a {
@@ -41,6 +51,9 @@ a {
 
 .main-header {
   background-image: url(../images/background-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #68727b;
 }
 
 .sedona-description_heading {
@@ -97,29 +110,32 @@ a {
   }
 }
 
-.hotel-search{
+.hotel-search {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
+
   input[type="date"],
-  input[type="number"]{
-      font: inherit;
-      background-color: #f2f2f2;
-      border: none;
-      &:focus{
-        outline-color: #e5e5e5;
-        outline-width: 2px;
-        outline-style: solid;
-        background-color: #fff;
-      }
-      &:hover{
-        background-color: #ebebeb;
-      }
+  input[type="number"] {
+    font: inherit;
+    background-color: #f2f2f2;
+    border: none;
+
+    &:focus {
+      outline-color: #e5e5e5;
+      outline-width: 2px;
+      outline-style: solid;
+      background-color: #fff;
+    }
+
+    &:hover {
+      background-color: #ebebeb;
+    }
   }
 
 }
 
-.catalog__btn{
+.catalog__btn {
   font-family: inherit;
   font-size: 21px;
   font-weight: 700;
@@ -147,12 +163,13 @@ a {
   }
 }
 
-.sedona-footer_item{
+.sedona-footer_item {
   font-family: inherit;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  a{
+
+  a {
     text-decoration: none;
     color: black
   }
